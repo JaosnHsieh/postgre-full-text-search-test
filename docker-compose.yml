@@ -8,6 +8,8 @@ services:
     environment:
       POSTGRES_USER: example
       POSTGRES_PASSWORD: example
+    volumes:                                                                                                                                                  
+    - db_data:/var/lib/postgresql/data
     ports:
       - 8082:5432
 
